@@ -16,7 +16,7 @@ class Prodaja(models.Model):
         verbose_name = "Продажа"
         verbose_name_plural = "Продажы"
         #ordering = ['prodaja']
-        
+         
     
     def __str__(self) -> str:
         return self.productname
