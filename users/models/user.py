@@ -3,12 +3,11 @@ from django.db import models
 # Create your models here.
 
 
-
 class User(models.Model):
 
-    username = models.CharField("Имя", max_length=100)
-    password = models.CharField("Проль", max_length=100)
-    Email = models.EmailField("Email", max_length=50)
+    username = models.CharField("Название", max_length=100)
+    #password = models.IntegerField()
+    Email = models.CharField("Email", max_length=50)
     
     
     class Meta:
@@ -17,4 +16,4 @@ class User(models.Model):
         
     
     def __str__(self) -> str:
-        return self.name
+        return self.username
