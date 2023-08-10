@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'storage',
     #'users',
     'agent',
+    'prodaja',
 ]
 
 MIDDLEWARE = [
