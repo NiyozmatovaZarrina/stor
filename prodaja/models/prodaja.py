@@ -9,9 +9,7 @@ class Prodaja(models.Model):
 
     productname=models.CharField("Название", max_length=100)
     agentname=models.ForeignKey("agent.agent", on_delete=models.CASCADE, related_name="agent")
-    totalprice= models.IntegerField("Цена")
-    
-    
+    totalprice= models.IntegerField("Цена")    
     
     
     class Meta:
@@ -22,3 +20,4 @@ class Prodaja(models.Model):
     
     def __str__(self) -> str:
         return self.productname
+
