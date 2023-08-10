@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Prodaja(models.Model):
-    #user  = models.ForeignKey(".user", on_delete=models.CASCADE, related_name="user")
+    username  = models.ForeignKey("users.user", on_delete=models.CASCADE, related_name="user")
 
     productname=models.CharField("Название", max_length=100)
     agentname=models.ForeignKey("agent.agent", on_delete=models.CASCADE, related_name="agent")

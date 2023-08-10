@@ -5,7 +5,7 @@ from .models import Prodaja
 
 @admin.register(Prodaja)
 class ProdajaAdmin(admin.ModelAdmin):
-    list_display =["productname","agentname","totalprice"]
+    list_display =["username","productname","agentname","totalprice"]
    # list_filter=[" totalprice"]
 
 
