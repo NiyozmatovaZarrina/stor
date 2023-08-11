@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'storage',
     'users',
     'agent',
+    'prodajadetails',
+    'produkts',
     'prodaja',
 ]
 
