@@ -14,7 +14,7 @@ class Prihoddetail(models.Model):
     
     class Meta:
         verbose_name = "ПриходДеталь"
-        verbose_name_plural = "ПриходДетали"
+        verbose_name_plural = "ДеталиПрихода"
         #ordering = ['prodaja']
          
     
