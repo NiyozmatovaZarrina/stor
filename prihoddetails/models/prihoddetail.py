@@ -17,7 +17,7 @@ class Prihoddetail(models.Model):
         verbose_name_plural = "ДеталиПрихода"
         #ordering = ['prodaja']
          
-    
+     
     def __str__(self) -> str:
         return self.color
 
