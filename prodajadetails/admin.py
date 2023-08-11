@@ -5,7 +5,7 @@ from .models import Prodajadetail
 
 @admin.register(Prodajadetail)
 class ProdajadetailAdmin(admin.ModelAdmin):
-    list_display =["prihod","size","color","price"]
+    list_display =["prodaja","size","color","price"]
     #list_filter=[" username","email"]
 
 

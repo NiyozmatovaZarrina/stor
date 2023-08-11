@@ -4,17 +4,17 @@ from django.db import models
 
 
 
-class Prodajadetail(models.Model):
+class Prihoddetail(models.Model):
     produktname  = models.ForeignKey("produkts.produkt", on_delete=models.CASCADE, related_name="Название",blank=True,null=True)
-    prodaja=models.ForeignKey("prodaja.prodaja", on_delete=models.CASCADE, related_name="prodaja")
+    prihod=models.ForeignKey("prihods.prihod", on_delete=models.CASCADE, related_name="prodaja")
     size= models.IntegerField("Размер")  
     color=models.CharField("Цвет", max_length=100)
     price=models.FloatField("Цена", max_length=100)  
     
     
     class Meta:
-        verbose_name = "Деталь"
-        verbose_name_plural = "Детали"
+        verbose_name = "ПриходДеталь"
+        verbose_name_plural = "ПриходДетали"
         #ordering = ['prodaja']
          
     

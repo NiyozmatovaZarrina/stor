@@ -16,6 +16,6 @@ class Prihod(models.Model):
         #ordering = ['prodaja']
          
     
-    def __str__(self) -> str:
-        return self.user
+    def __int__(self) -> int:
+        return self.totalprice
 

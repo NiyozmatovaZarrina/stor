@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Category(models.Model):
-    categoryname=models.CharField("Категория", max_length=100)
+    categoryname=models.CharField("Категория", max_length=100,blank=True,null=True,default="category_default")
     
     
     class Meta:
