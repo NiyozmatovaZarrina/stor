@@ -5,9 +5,9 @@ from django.db import models
 
 
 class Produkt(models.Model):
-    produktname  = models.CharField("Наименование", max_length=100)
+    produktname  = models.CharField("Наименование", max_length=100,blank=True,null=True)
     provider=models.ForeignKey("storage.provider", on_delete=models.CASCADE, related_name="Провайдер")
-    #cotegory=models.ForeignKey("categirys.cotegory", on_delete=models.CASCADE, related_name="Котегория")
+    category =models.ForeignKey("categorys.category", on_delete=models.CASCADE, related_name="Котегория")
     size= models.IntegerField("Размер")  
     color=models.CharField("Цвет", max_length=100)
     price=models.FloatField("Цена", max_length=100)  
@@ -20,5 +20,5 @@ class Produkt(models.Model):
          
     
     def __str__(self) -> str:
-        return self.produktname
+        return self.color
 

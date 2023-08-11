@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Prodajadetail(models.Model):
-    produktname  = models.ForeignKey("produkts.produkt", on_delete=models.CASCADE, related_name="Название")
+    produktname  = models.ForeignKey("produkts.produkt", on_delete=models.CASCADE, related_name="Название",blank=True,null=True)
     prihod=models.ForeignKey("prodaja.prodaja", on_delete=models.CASCADE, related_name="prodaja")
     size= models.IntegerField("Размер")  
     color=models.CharField("Цвет", max_length=100)
@@ -19,5 +19,5 @@ class Prodajadetail(models.Model):
          
     
     def __str__(self) -> str:
-        return self.produktname
+        return self.color
 

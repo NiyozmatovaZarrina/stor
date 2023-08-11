@@ -1,0 +1,1 @@
+from .prihod import Prihod
