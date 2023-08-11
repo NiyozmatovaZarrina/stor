@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'users',
     'agent',
     'prodajadetails',
-    'prihoddetails',
     'produkts',
     'prihods',
     'categorys',

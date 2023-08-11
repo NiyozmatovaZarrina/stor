@@ -1,1 +1,0 @@
-from .prihoddetail import Prihoddetail
