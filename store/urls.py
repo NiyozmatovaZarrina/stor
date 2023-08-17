@@ -23,6 +23,7 @@ from django.conf import settings
     path('api/v1/', include('store.urls')),
 ]"""
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('api/v1/', include('categorys.urls')),
     path('api/v1/profile/', include('users.api.urls')),
     path('api/v1/prihod/', include('prihod.urls')),
