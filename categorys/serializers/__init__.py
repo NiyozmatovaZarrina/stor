@@ -1,1 +1,1 @@
-from .category import CategoryShortSerializer, CategoryFullSerializer, CategoryChildsSerializer, CategoryCreateSerializer
+from .category import CategorySerializer
