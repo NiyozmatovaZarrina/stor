@@ -7,6 +7,3 @@ from .models import Prihod
 class PrihodAdmin(admin.ModelAdmin):
     list_display =["user","totalprice"]
    # list_filter=[" totalprice"]
-
-
-

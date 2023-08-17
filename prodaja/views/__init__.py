@@ -1,0 +1,1 @@
+from .prodaja import ProdajaViewSet

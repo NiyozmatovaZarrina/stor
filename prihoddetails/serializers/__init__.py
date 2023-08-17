@@ -1,0 +1,1 @@
+from .prihoddetail import PrihoddetailShortSerializer, PrihoddetailFullSerializer, PrihoddetailChildsSerializer, PrihoddetailCreateSerializer

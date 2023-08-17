@@ -1,0 +1,1 @@
+from .prodajadetail import ProdajadetailShortSerializer, ProdajadetailFullSerializer, ProdajadetailChildsSerializer, ProdajadetailCreateSerializer

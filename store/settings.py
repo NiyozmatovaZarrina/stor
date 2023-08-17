@@ -46,7 +46,24 @@ INSTALLED_APPS = [
     'prihods',
     'categorys',
     'prodaja',
+    'drf_spectacular',
+    'rest_framework',
 ]
+#////////
+REST_FRAMEWORK = {
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+#//////////
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'prodaja i pokupka',
+    'DESCRIPTION': 'API FOR prodaja i pokupka',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+    "SCHEMA_PATH_PREFIX": r'/api/v[0-9]',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

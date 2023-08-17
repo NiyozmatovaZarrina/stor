@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Prihod(models.Model):
-    provider  = models.ForeignKey("storage.provider", on_delete=models.CASCADE, related_name="Названиепоставщика")
+    provider  = models.ForeignKey("storage.provider", on_delete=models.CASCADE, related_name="Поставшики")
     user=models.ForeignKey("users.user", on_delete=models.CASCADE, related_name="Пользователь")
     totalprice=models.FloatField("Цена", max_length=100)  
     
