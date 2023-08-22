@@ -1,4 +1,4 @@
-"""
+"""""""""
 URL configuration for store project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,22 +17,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from django.conf.urls import include
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/v1/', include('categorys.urls')),
+    
+  ]
+
 
 """urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/v1/', include('store.urls')),
-]"""
-urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('categorys.urls')),
     path('api/v1/profile/', include('users.api.urls')),
     path('api/v1/prihod/', include('prihod.urls')),
     path('api/v1/produkt/', include('produkt.urls')),
-    path('api/v1/agent/', include('agent.urls')),
-    
-    
+    path('api/v1/agent/', include('agent.urls')),    
 ]
-
+"""
 if (settings.DEBUG):
     from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
     urlpatterns += [        
