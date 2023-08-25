@@ -1,12 +1,10 @@
 from django.urls import path, include
 from rest_framework import routers
-
-from .views import PrihoddetailViewSet
+from .views import PrihodViewSet
 
 router = routers.DefaultRouter()
-router.register("prihoddetail", PrihoddetailViewSet, "prihoddetail")
+router.register(r'Prihod', PrihodViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api/v1/prihod/', include('prihod.urls'))
+   path("", include(router.urls)),   
 ]

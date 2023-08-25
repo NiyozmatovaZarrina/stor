@@ -1,1 +1,2 @@
-from .provider import ProviderShortSerializer, ProviderFullSerializer, ProviderChildsSerializer, ProviderCreateSerializer
+from .provider import ProviderSerializer
+

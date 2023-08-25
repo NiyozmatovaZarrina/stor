@@ -9,6 +9,12 @@ urlpatterns = [
     path('', include("categorys.urls")),
     path('', include("agent.urls")),
     path('', include("prihoddetails.urls")),
+    path('', include("prihods.urls")),
+    path('', include("prodaja.urls")),
+    path('', include("prodajadetails.urls")),
+    path('', include("produkts.urls")),
+    path('', include("storage.urls")),
+     path('', include("users.urls")),
     
   ]
 

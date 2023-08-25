@@ -4,7 +4,7 @@ from .views import AgentViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'agents', AgentViewSet)
+router.register(r'Agents', AgentViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),    

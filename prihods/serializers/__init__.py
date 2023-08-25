@@ -1,1 +1,2 @@
-from .prihod import PrihodShortSerializer, PrihodFullSerializer, PrihodChildsSerializer, PrihodCreateSerializer
+from .prihod import PrihodSerializer
+

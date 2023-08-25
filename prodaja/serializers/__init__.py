@@ -1,1 +1,2 @@
-from .prodaja import ProdajaShortSerializer, ProdajaFullSerializer, ProdajaChildsSerializer, ProdajaCreateSerializer
+from .prodaja import ProdajaSerializer
+

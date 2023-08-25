@@ -1,12 +1,10 @@
 from rest_framework import generics
-from ..models import Prodaja
-from ..serializers import ProdajaSerializer
+from prodaja.models import Prodaja
+from prodaja.serializers import ProdajaSerializer
+from rest_framework import viewsets
 
-class ProdajaList(generics.ListCreateAPIView):
+
+class ProdajaViewSet(viewsets.ModelViewSet):
     queryset = Prodaja.objects.all()
-    serializer_class = PrihodSerializer
-
-
-class ProdajaDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset =Prodaja.objects.all()
     serializer_class = ProdajaSerializer
+

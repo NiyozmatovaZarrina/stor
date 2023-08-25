@@ -1,1 +1,2 @@
-from .produkt import ProduktShortSerializer, ProduktFullSerializer, ProduktChildsSerializer, ProduktCreateSerializer
+from .produkt import ProduktSerializer
+

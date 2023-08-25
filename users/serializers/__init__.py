@@ -1,1 +1,2 @@
-from .user import UserShortSerializer, UserFullSerializer, UserChildsSerializer, UserCreateSerializer
+from .user import UserSerializer
+
