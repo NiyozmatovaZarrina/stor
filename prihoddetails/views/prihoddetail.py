@@ -1,12 +1,10 @@
 from rest_framework import generics
-from ..models import Prihoddetail
-from ..serializers import PrihoddetailSerializer
+from prihoddetails.models import Prihoddetail
+from prihoddetails.serializers import PrihoddetailSerializer
+from rest_framework import viewsets
 
-class PrihoddetailList(generics.ListCreateAPIView):
+
+class PrihoddetailViewSet(viewsets.ModelViewSet):
     queryset = Prihoddetail.objects.all()
     serializer_class = PrihoddetailSerializer
 
-
-class PrihoddetailDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Prihoddetail.objects.all()
-    serializer_class = PrihoddetailSerializer
